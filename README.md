@@ -92,7 +92,8 @@ print(res2)
 ```
 
 ## Output :
-<img width="551" height="282" alt="image" src="https://github.com/user-attachments/assets/6277dc84-142e-4e5e-8c5e-4267ac866694" />
+<img width="357" height="335" alt="Screenshot 2026-11-21 083454" src="https://github.com/user-attachments/assets/3df47dcf-e4d6-4fc0-b667-2c321c3171b9" />
+
 
 
 ## Result :
