@@ -20,10 +20,8 @@ Step 7: Print the results.<br>
 
 ## Program :
 ```py
-pip install pgmpy
-
 # Importing Library
-%pip install pgmpy # install pgmpy in the current kernel's environment
+%pip install pgmpy
 from pgmpy.models import DiscreteBayesianNetwork
 from pgmpy.inference import VariableElimination
 
@@ -74,19 +72,19 @@ alarm_model.add_cpds(
 
 alarm_model.check_model()
 
-inference=VariableElimination(alarm_model)
+inference = VariableElimination(alarm_model)
 
-evidence={"JohnCalls":1,"MaryCalls":0}
+query = "Burglary"
 
-query='Burglary'
+evidence = {"JohnCalls": 1, "MaryCalls": 0}
 
-res=inference.query(variables=[query],evidence=evidence)
+res = inference.query(variables=[query], evidence=evidence)
 
 print(res)
 
-evidence2={"JohnCalls":1,"MaryCalls":1}
+evidence2 = {"JohnCalls": 1, "MaryCalls": 1}
 
-res2=inference.query(variables=[query],evidence=evidence2)
+res2 = inference.query(variables=[query], evidence=evidence2)
 
 print(res2)
 ```
